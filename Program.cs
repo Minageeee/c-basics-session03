@@ -1,0 +1,186 @@
+﻿#region Question1
+using System.Text;
+
+string title = "clean code";
+string upperTitle = title.ToUpper();
+Console.WriteLine("the old title : " + title + ". the new title : " + upperTitle);
+#endregion
+
+Console.WriteLine("____________________________________");
+#region Question2
+String S1 = "Clean Code";
+String S2 = "Clean Code";
+Console.WriteLine(Object.ReferenceEquals(S1, S2));
+#endregion
+
+Console.WriteLine("____________________________________");
+#region question 3
+StringBuilder book = new StringBuilder("");
+book.Append("Book List");
+book.Append("- Updated");
+Console.WriteLine(book.ToString());
+#endregion
+
+Console.WriteLine("____________________________________");
+#region question 4
+
+book.Replace("Book List", "Library");
+Console.WriteLine(book);
+#endregion
+
+Console.WriteLine("____________________________________");
+
+#region question5
+
+int pages = 464;
+Console.WriteLine("book: " + title + ",pages: " + pages);
+#endregion
+
+Console.WriteLine("____________________________________");
+
+#region question 6
+Console.WriteLine($"book:{title},pages: {pages} ");
+#endregion
+Console.WriteLine("____________________________________");
+#region question 7
+Console.WriteLine(string.Format("Book:{0},pages:{1}", title, pages));
+#endregion
+Console.WriteLine("____________________________________");
+
+
+
+#region question 8
+
+if (pages>300)
+{
+    Console.WriteLine("large book");
+}
+else
+{
+    Console.WriteLine("short book");
+
+}
+
+#endregion
+Console.WriteLine("____________________________________");
+
+
+#region question 9
+bool IsAvailable = true;
+if(pages>300 && IsAvailable)
+{
+    Console.WriteLine("You can borrow this Book");
+
+}
+else
+{
+    Console.WriteLine("You can borrow this book");
+
+}
+
+#endregion
+
+Console.WriteLine("____________________________________");
+
+#region question 10
+string Title = "Refactoring";
+switch(Title)
+{
+    case "clean code": Console.WriteLine("Great Choice");
+        break;
+    case "Refactoring": Console.WriteLine("Nice pick!");
+        break;
+}
+
+
+#endregion
+Console.WriteLine("____________________________________");
+
+#region question 11
+//we didnt take the ternary operator yet
+
+#endregion
+
+Console.WriteLine("____________________________________");
+#region question 12
+string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+
+
+for(int i=1;i<=3;i++)
+{
+    Console.WriteLine(books[i-1]); //i-1 because array starts with 0
+}
+
+#endregion
+
+
+
+
+Console.WriteLine("____________________________________");
+
+#region question 13
+
+int j = 1;
+while(j<=3)
+{
+    Console.WriteLine(books[j-1]);
+    j++;
+}
+
+#endregion
+Console.WriteLine("____________________________________");
+
+#region question 14
+
+int k = 1;
+do
+{
+    Console.WriteLine("Checking book...");
+    k++;
+} while (k <= 3);
+
+#endregion
+
+Console.WriteLine("____________________________________");
+
+
+#region question 15
+
+foreach (string A in books)
+{
+    Console.WriteLine(A);
+}
+
+#endregion
+
+Console.WriteLine("____________________________________");
+#region question 16
+for (int i = 1; i <= 3; i++)
+{
+    if (books[i]=="Refactoring")
+    {
+        break;
+    }
+    Console.WriteLine(books[i - 1]); //i-1 because array starts with 0
+}
+#endregion
+Console.WriteLine("____________________________________");
+
+
+#region question 17
+
+
+for (int i = 1; i <= 3; i++)
+{
+    if (books[i] == "The Pragmatic Programmer")
+    {
+        continue;
+    }
+    Console.WriteLine(books[i - 1]); //i-1 because array starts with 0
+}
+#endregion
+
+Console.WriteLine("____________________________________");
+#region question 18
+//we didnt take the methods yet!
+#endregion
